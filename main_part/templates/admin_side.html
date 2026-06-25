@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .admin_login{
+            border: 2px solid goldenrod;
+            padding:50px;
+            width:300px;
+            
+        }
+        input[type='text']{
+            margin-top: 26px;
+            width:100px;
+            font-size: 20px
+        }
+        label{
+            font-size: 30px;
+        }
+        button{
+            width:150px;
+            height:35px;
+            margin-top: 30px;
+            margin-left: 50px;
+
+
+        }
+        h1{
+            margin-left: 10px;
+        
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="verify">
+        <form action="/admin_side" method="POST">
+            {% csrf_token %}
+        <label>Reg No : </label><input type="text" name="verify">
+        <button type="submit">Verify</button>
+        </form>
+    </div>
+      <div class="admin_login">
+        <form action="/admin_side" method="POST">
+            {% csrf_token %}
+            <h1>10th Internal</h1>
+           <label >Reg NO :  </label><input type="text" name="reg_no" placeholder="Empty">
+            <br>
+            <br>
+            <label>Internal1: </label><input type="text" name="internal1" placeholder="Empty">
+            <br>
+        <label>Internal2: </label><input type="text" name="internal2" placeholder="Empty">
+        <br>
+           <label>Internal3: </label> <input type="text" name="internal3" placeholder="Empty">
+            <br>
+<label>Internal4: </label><input type="text" name="internal4" placeholder="Empty">
+<br>
+<label>Internal5: </label><input type="text" name="internal5" placeholder="Empty"><br>
+<br>
+<button type="submit">Upload</button>
+
+        </form>
+      </div>
+</body>
+</html>

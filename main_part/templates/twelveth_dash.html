@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TamilNadu 12th Result</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <header>
+        <h1>Government of TamilNadu Examination</h1>
+        <h2>HSE - 12th TamilNadu Higher Secondary Result 2026</h2>
+    </header>
+
+    <div class="res">
+         <form action="/twelveth_dash" method="POST">
+            {% csrf_token %}
+        <label for="reg_no" style="margin-left: 120px;">Registration No: </label>
+        <input type="text" name="reg_no">
+        <br>
+        <br>
+        <br>
+        <label for="DOB">Date of Birth(dd/mm/yyyy): </label>
+        <input type="text" name="Dob">
+        <br>
+        <br>
+        <br>
+        <br>
+        <button type="submit">Get Marks</button>
+        <button type="button">Clear</button>
+        </form>
+
+    </div>
+</body>
+</html>

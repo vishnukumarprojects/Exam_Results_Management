@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TamilNadu 11th Result</title>
+    <link rel="stylesheet" href="../static/style.css">
+       <style>
+        table,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 16px;
+        }
+        th{
+            font-size: 14px;
+            padding: 5px;
+        }
+        
+    
+        .result-box{
+            text-align: center;
+            margin-top: 50px;
+       }
+       </style>
+       
+</head>
+<body>
+    <header>
+        <h1>Government of TamilNadu Examination</h1>
+        <h2>HSE - 11th TamilNadu Higher Secondary Result 2026</h2>
+    </header>
+    <div class="result-box">
+        <center>
+    <table>
+        
+        
+    
+          <th colspan="6" style="color:black;font-family:'Times New Roman', Times, serif;padding: 15px;"><p>{{student_name}} ( {{ reg_no }} )</p></p></th>
+        
+    <tr>
+        <th style="font-size: 18px;padding: 10px;background-color: violet;color: white;">Subject</th>
+       
+        <th style="font-size: 18px;padding: 10px;background-color: violet;color: white;">Internal</th>
+        <th style="font-size: 18px;padding: 10px;background-color: violet;color: white;">Theory</th>
+        <th style="font-size: 18px;padding: 10px;background-color: violet;color: white;">practical</th>
+        <th style="font-size: 18px;padding: 10px;background-color: violet;color: white;">Total</th>
+        <th style="font-size: 18px;padding: 10px;background-color: violet;color: white;">Pass</th>
+        
+    </tr>
+
+    <tr>
+        <th style="background-color:azure;"><p>{{subject_data.sub1}}</p></th>
+        <td><p>{{internal_data.internal1}}</p></td>
+        <td><p>{{theory_data.theory1}}</p></td>
+        <td></td>
+        <td><p>{{total_mark_sub1}}</p></td>
+        <td><p>{{sub1p}}</p></td>
+    </tr>
+
+      <tr>
+        <th style="background-color:azure;"><p>{{subject_data.sub2}}</p></th>
+        <td><p>{{internal_data.internal2}}</p></td>
+        <td><p>{{theory_data.theory2}}</p></td>
+        <td></td>
+        <td><p>{{total_mark_sub2}}</p></td>
+        <td><p>{{sub2p}}</p></td>
+    </tr>
+      <tr>
+        <th style="background-color: azure;"><p>{{subject_data.sub3}}</p></th>
+        <td><p>{{internal_data.internal3}}</p></td>
+        <td><p>{{theory_data.theory3}}</p></td>
+        <td></td>
+        <td><p>{{total_mark_sub3}}</p></td>
+        <td><p>{{sub3p}}</p></td>
+    </tr>
+      <tr>
+        <th style="background-color: azure;"><p>{{subject_data.sub4}}</p></th>
+        <td><p>{{internal_data.internal4}}</p></td>
+        <td><p>{{theory_data.theory4}}</p></td>
+        <td><p>{{practical_data.practical1}}</p></td>
+        <td><p>{{total_mark_sub4}}</p></td>
+        <td><p>{{sub4p}}</p></td>
+    </tr>
+      <tr>
+        <th style="background-color: azure;"><p>{{subject_data.sub5}}</p></th>
+        <td><p>{{internal_data.internal5}}</p></td>
+        <td><p>{{theory_data.theory5}}</p></td>
+        <td><p>{{practical_data.practical2}}</p></td>
+        <td><p>{{total_mark_sub5}}</p></td>
+        <td><p>{{sub5p}}</p></td>
+    </tr>
+    <tr>
+        <th style="background-color:azure ;"><p>{{subject_data.sub6}}</p></th>
+        <td><p>{{internal_data.internal6}}</p></td>
+        <td><p>{{theory_data.theory6}}</p></td>
+        <td><p>{{practical_data.practical3}}</p></td>
+        <td><p>{{total_mark_sub6}}</p></td>
+        <td><p>{{sub6p}}</p></td>
+    </tr>
+
+<tr>
+        <th style="background-color:cadetblue;">TOTAL</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><p>{{grand_total}}</p></td>
+        <td><p>{{pass_fail}}</p></td>
+    </tr>
+    </table>
+    </div>
+    </center>
+</body>
+</html>
